@@ -14,7 +14,6 @@ import java.util.Set;
 @Setter
 @Getter
 @NoArgsConstructor
-@ToString
 @Entity
 @Table(name="carreras", schema = "universidad")
 public class Carrera implements Serializable {
@@ -62,6 +61,18 @@ public class Carrera implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(id, nombre);
+    }
+
+    @Override
+    public String toString() {
+        return "Carrera{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", cantidadMaterias=" + cantidadMaterias +
+                ", cantidadAnios=" + cantidadAnios +
+                ", fechaAlta=" + fechaAlta +
+                ", fechaModificacion=" + fechaModificacion +
+                '}';
     }
 
     //Métodos
