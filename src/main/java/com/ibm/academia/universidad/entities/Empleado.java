@@ -35,9 +35,6 @@ public class Empleado extends Persona{
 
     @Override
     public String toString() {
-        return super.toString() + "\tEmpleado{" +
-                "sueldo=" + sueldo +
-                ", tipoEmpleado=" + tipoEmpleado +
-                '}';
+        return super.toString() + "\tEmpleado [sueldo=" + sueldo + ", tipoEmpleado=" + tipoEmpleado + "]";
     }
 }
