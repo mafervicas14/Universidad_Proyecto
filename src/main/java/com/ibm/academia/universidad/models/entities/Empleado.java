@@ -1,5 +1,6 @@
 package com.ibm.academia.universidad.models.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.ibm.academia.universidad.enums.TipoEmpleado;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,6 +26,7 @@ public class Empleado extends Persona{
 
     @OneToOne(optional = true,cascade = CascadeType.ALL)
     @JoinColumn(name = "pabellon_id", foreignKey = @ForeignKey(name="FK_PABELLON_ID"))
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "empleados"})
     private Pabellon pabellon;
 
     public Empleado(Integer id, String nombre, String apellido, String dni, Direccion direccion, BigDecimal sueldo, TipoEmpleado tipoEmpleado) {

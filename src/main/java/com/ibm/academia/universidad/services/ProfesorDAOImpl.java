@@ -29,4 +29,9 @@ public class ProfesorDAOImpl extends PersonaDAOImpl implements ProfesorDAO
         profesorActualizado = repository.save(profesorEncontrado);
         return profesorActualizado;
     }
+
+    @Override
+    public Iterable<Persona> findProfesoresByCarrera(String carrera) {
+        return ((ProfesorRepository)repository).findProfesoresByCarrera(carrera);
+    }
 }

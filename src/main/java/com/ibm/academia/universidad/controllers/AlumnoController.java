@@ -32,7 +32,7 @@ public class AlumnoController
 
     /**
      * EndPoint para crear un objeto Persona de tipo Alumno
-     * @param alumno Alumno Objeto alumno con la información a crear
+     * @param alumno Objeto alumno con la información a crear
      * @return Retorna un objeto Persona de tipo alumno con código httpstatus 201
      * @author Mafervicas 05/15/2022
      */
