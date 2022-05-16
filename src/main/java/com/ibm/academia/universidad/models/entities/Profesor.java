@@ -14,7 +14,8 @@ import java.util.Set;
 @Entity
 @Table(name = "profesores", schema = "universidad")
 @PrimaryKeyJoinColumn(name="persona_id")
-public class Profesor extends Persona{
+public class Profesor extends Persona
+{
 
     @Column(name="sueldo")
     private BigDecimal sueldo;

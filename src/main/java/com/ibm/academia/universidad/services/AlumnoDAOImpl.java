@@ -46,19 +46,5 @@ public class AlumnoDAOImpl  extends PersonaDAOImpl implements AlumnoDAO
         return repository.save(alumno);
     }
 
-    /*@Override
-    public void Prueba(Carrera carrera) {
-        Persona profesor = null;
 
-        Optional<Persona> oProfesor = personaDao.buscarPorId(1);
-        Optional<Persona> oProfesor2 = personaDao.buscarPorId(2);
-
-        profesor = oProfesor.get();
-
-        Set<Profesor> profesores = null;
-        profesores.add((Profesor) profesor);
-
-        Carrera carreraNueva = null ;
-        carreraNueva.setProfesores(profesores);
-    }*/
 }

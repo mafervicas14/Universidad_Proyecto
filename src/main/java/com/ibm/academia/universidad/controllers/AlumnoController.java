@@ -83,7 +83,7 @@ public class AlumnoController
      * @author Mafervicas 05/15/2022
      */
     @PutMapping("/upd/alumnoId/{alumnoId}")
-    public ResponseEntity<?> actualizarCarrera(@PathVariable Integer alumnoId, @RequestBody Persona alumno)
+    public ResponseEntity<?> actualizarProfesor(@PathVariable Integer alumnoId, @RequestBody Persona alumno)
     {
 
         Optional<Persona> oAlumno = alumnoDAO.buscarPorId(alumnoId);
@@ -101,7 +101,7 @@ public class AlumnoController
     /**
      * EndPoint para eliminar un objeto de tipo alumno
      * @param alumnoId Parámetro para identificar al alumno
-     * @return Retorna una respuesta sobre la eliminación de esa carrera
+     * @return Retorna una respuesta sobre la eliminación de ese alumno
      * @NotFoundException En caso de que no exista el alumno con ese ID a eliminar
      * @author Mafervicas 05/15/2022
      */
