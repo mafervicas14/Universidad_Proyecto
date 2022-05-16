@@ -1,4 +1,4 @@
-package com.ibm.academia.universidad.entities;
+package com.ibm.academia.universidad.models.entities;
 
 import lombok.*;
 

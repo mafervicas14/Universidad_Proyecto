@@ -1,8 +1,8 @@
-package com.ibm.academia.universidad.entities;
+package com.ibm.academia.universidad.models.entities;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -25,6 +25,7 @@ public class Profesor extends Persona{
             joinColumns = @JoinColumn(name = "profesor_id"),
             inverseJoinColumns = @JoinColumn(name = "carrera_id")
     )
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "profesores"})
     private Set<Carrera> carreras;
 
     public Profesor(Integer id, String nombre, String apellido, String dni, Direccion direccion, BigDecimal sueldo) {

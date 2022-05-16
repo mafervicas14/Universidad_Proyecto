@@ -1,17 +1,7 @@
 package com.ibm.academia.universidad;
 
-import com.ibm.academia.universidad.entities.Carrera;
-import com.ibm.academia.universidad.entities.Persona;
-import com.ibm.academia.universidad.services.AlumnoDAO;
-import com.ibm.academia.universidad.services.CarreraDAO;
-import com.ibm.academia.universidad.services.PersonaDAO;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
-import java.util.Optional;
 
 @Component
 public class Comandos implements CommandLineRunner {

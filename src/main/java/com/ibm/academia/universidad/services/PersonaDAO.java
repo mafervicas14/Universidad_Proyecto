@@ -1,6 +1,6 @@
 package com.ibm.academia.universidad.services;
 
-import com.ibm.academia.universidad.entities.Persona;
+import com.ibm.academia.universidad.models.entities.Persona;
 
 import java.util.Optional;
 

@@ -1,6 +1,6 @@
 package com.ibm.academia.universidad.repositories;
 
-import com.ibm.academia.universidad.entities.Carrera;
+import com.ibm.academia.universidad.models.entities.Carrera;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

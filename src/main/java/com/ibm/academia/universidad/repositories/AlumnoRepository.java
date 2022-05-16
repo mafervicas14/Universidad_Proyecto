@@ -1,7 +1,7 @@
 package com.ibm.academia.universidad.repositories;
 
 
-import com.ibm.academia.universidad.entities.Persona;
+import com.ibm.academia.universidad.models.entities.Persona;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
