@@ -18,4 +18,7 @@ public interface AulaRepository extends CrudRepository<Aula, Integer> {
     @Query(value = "SELECT * FROM universidad.aulas WHERE tipo_pizarron = ?1", nativeQuery = true )
     public Iterable<Aula> findAulasbyPizarron (Pizzaron pizzaron);
 
+    @Query(value = "SELECT * FROM universidad.aulas WHERE numeroAula = ?1", nativeQuery = true )
+    public Iterable<Aula> findAulasbyPizarron (String numeroAula);
+
 }

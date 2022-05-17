@@ -29,4 +29,9 @@ public interface CarreraRepository extends CrudRepository <Carrera, Integer>
     @Query("select p from Persona p where p.nombre = ?1 and p.apellido = ?2")
     public Optional<Persona> buscarPorNombreYApellido(String nombre, String apellido);
 
+
+    @Query("select c from Carrera c join fetch c.profesores p where p.nombre = ?1 and p.apellido = ?2")
+    public Iterable<Carrera> buscarCarrerasPorProfesorNombreYApellid(String nombre, String apellido);
+
+
 }
